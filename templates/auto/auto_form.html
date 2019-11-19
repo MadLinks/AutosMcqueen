@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="banner">
+        <img src="{% static 'img/bmw_f30.JPG' %}" alt="" class="banner__img">
+        
+    
+</div> 
+<div>
+    <H1>REGISTRAR  VEHICULO</H1>
+</div>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Guardar</button>
+</form>
+
+{% endblock %}

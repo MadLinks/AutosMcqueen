@@ -1,0 +1,61 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<body>
+        
+        <div class="banner" >
+                <img src="{% static 'img/ford-focus-2014.jpg' %}"  alt="" class="banner__img">
+                <div class="contenedor">
+                    <h2 class="banner__titulo">CONTACTO</h2>
+                   
+        
+                </div>
+        
+        
+        </div>
+        <div class="container">
+                <div class="form__top">
+                    
+                </div>
+                <form class="form__reg" action="">
+    
+                    <label>Correo Electrónico</label>
+                    <input class="input" name="email" type="email"  required autofocus>
+    
+                    <label>Run</label>
+                    <input class="input" name="text" size="12" maxlength="12" type="text" name="numpiso" onkeypress="return valida(event)"  required>
+    
+                    <label>Nombre Completo</label>
+                    <input class="input" type="text" name="numpiso" onkeypress="return validar(event)"  required>
+    
+                    <label>Teléfono</label>
+                    <input class="input" size="12" maxlength="12" minlength="9" type="text" name="numpiso" onkeypress="return validare(event)"  required>
+    
+                    <label>Asunto</label>
+                    <div class="datos1">
+                        <select name="Asunto">
+                                <option value="0">Seleccionar</option>
+                                <option value="1">Contacto</option>
+                                <option value="2">Sugerencia</option>
+                                <option value="3">Reclamo</option>
+    
+                       
+                        </select>
+                    </div>
+                    <br>
+                    <label class="textarea">Mensaje</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+    
+                    <br>
+                    <div class="btn__form">
+                        <input class="btn__submit" type="submit" value="REGISTRAR">
+                        <input class="btn__reset" type="reset" value="LIMPIAR">
+                    </div>
+                </form>
+            </div>
+           
+
+
+
+</body>
+{% endblock %}          

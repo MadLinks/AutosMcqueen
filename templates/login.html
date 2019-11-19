@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{%block header %}
+{% endblock %}
+{% block content %}
+<div class="banner">
+    <img src="{% static 'img/bmw_f30.JPG' %}" alt="" class="banner__img">
+    
+
+</div> 
+<form method="post">
+    {% csrf_token %}
+    <div class= contenedor>
+            <div class="row">
+                    <div class="col-md-6 col-md offset-3">
+                        <div class="form-group">
+                            <label for="username">Nombre de usuario:</label>
+                            <input class="form-control" type="text" name="username">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md offset-3">
+                        <div class="form-group">
+                            <label for="username">Contraseña:</label>
+                            <input class="form-control" type="password" name="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md offset-3">
+                        <div class="form-group">
+                            <a href="/reset/password_reset">¿Olvidaste tu contraseña?</a>
+                            <input class="btn btn-primary" type="submit" name="Ingresar">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md offset-3">
+                        <div class="form-group">
+                            <p>¿Nuevo por aqui?</p>
+                            <a href="/usuario/registrar">Regístrate ahora>></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    
+    
+
+</form>
+{% endblock %}

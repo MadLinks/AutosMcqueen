@@ -1,0 +1,55 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="banner">
+        <img src="{% static 'img/ford-mustang-2015-gt-muscle.JPG' %}" alt="" class="banner__img">
+        
+    
+</div> 
+<div>
+    <H1>LISTADO DE VEHICULOS</H1>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Modelo</td>
+            <td>Color</td>
+            <td>Año</td>
+            <td>Tipo</td>
+            <td>Comprador</td>
+            <td>Acciones</td>
+        <tr>  
+
+    </thead>
+    <tbody>
+        {% if autos %}
+        {% for autos in autos %}
+        <tr>
+            <td>{{ autos.id }}</td>
+            <td>{{ autos.modelo }}</td>
+            <td>{{ autos.color }}</td>
+            <td>{{ autos.anno }}</td>
+            <td>{{ autos.tipo }}</td>
+            <td>{{ autos.persona.nombre }} {{ auto.persona.apellidos }}</td>
+            <td>
+                <a class= "btn btn-primary" href="/auto/editar/{{ autos.id }}">Editar</a>
+                <a class= "btn btn-danger" href="/auto/eliminar/{{ autos.id }}">Eliminar</a>
+                
+            </td>
+        </tr>
+        {% endfor %}
+
+        {% else %}
+        <h1>No hay registro de autos</h1>
+
+        {% endif %}
+    </tbody>
+    
+
+{% endblock %}
+{%block footer %}
+
+{% endblock %}

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box
+}
+
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+   
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px
+}
+/*estilos del header*/
+
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu {
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #45B39D;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+   
+
+    
+}
+/*estilos del menu*/
+.nav {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+   
+   
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    display: block;
+    padding: 20px;
+    background: #45B39D;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link:hover {
+    background: white;
+    color: #45B39D;
+    
+}
+
+.mostrar {
+    left: 0;
+}
+
+.select {
+    background: white;
+    color: #45B39D;
+
+}
+
+/*Estilos del banner*/
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transform: translateX(-85%) translateY(-85%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.banner__txt{
+    display: block;
+}
+
+/*Estilos de info*/
+
+.info__columna{
+    background: #45B39D;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/*Estilos de info2*/
+
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #45B39D;
+}
+
+.cursos__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.cursos__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+
+}
+.cursos__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+/*Estilos de footer*/
+
+.footer{
+    background: #45B39D;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #45B39D;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
+/*Estilos de responsive*/
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+
+    .banner__titulo{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .banner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 70px 0;
+    }
+
+    .info, .cursos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -100px;
+    }
+
+    .info__columna {
+        width: 32%;
+    }
+
+    .cursos{
+        flex-wrap: wrap;
+        margin-top: 0;
+
+    }
+
+    .section__titulo{
+        width: 100%;
+    }
+
+    @media(min-width:1024px) {  
+        .contenedor {
+          width: auto;
+        }
+        .section__titulo {
+          font-size: 50px;
+          margin: 30px 0;
+        }
+        .nav {
+          position: static;
+          width: auto;
+          display: inline-flex
+          
+          
+        }
+        .menu {
+          display: flex;
+          margin: 0;
+        }
+        .icon-menu {
+          display: none;
+        }
+        .menu__link {
+          background: none;
+          font-size: 20px;
+        }
+        .select {
+          color: #fff;
+          background:#45B39D; 
+        }
+        .banner__titulo {
+          font-size: 60px;
+        }
+        .banner__txt {
+          font-size: 25px;
+        }
+        .info {
+          margin-top: -120px;
+        }
+        .info__columna {
+          padding: 30px;
+        }
+        .info__titulo {
+          font-size: 40px;
+          text-align: center;
+        }
+        
+        .cursos__descripcion {
+          padding: 20px;
+        }
+        .cursos__titulo {
+          font-size: 50px;
+        }
+        .cursos__txt {
+          font-size: 40px;
+        }
+
+        .valor__autos{
+            font-size: 60px;
+            margin-top: 400px;
+            display: flex
+        }
+        
+      }
+
+      /*estilos de contacto*/
+
+      .container {
+        max-width: 100%;
+        height: auto;
+        background-color: #45B39D;
+        margin: 5% auto;
+        padding-bottom: 1rem;
+    }
+    
+    .form__top {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0 1rem;
+        border-top: solid .4rem #45B39D;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+    
+    .form__top h2 {
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+    }
+    
+    h2 span {
+        color: rgb(0, 0, 0);
+    }
+    
+    .form__reg {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .btn__form {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+    
+    .input,
+    .btn__submit,
+    .btn__reset {
+        background-color: #EFEFEF;
+        padding: .5rem;
+        margin: .5rem 0;
+        border: none;
+        border-bottom: solid #C8C8C8 2px;
+        transition: all .5s;
+    }
+    
+    .input:focus {
+        border-bottom: solid rgb(248, 149, 56) .2rem;
+    }
+    
+    .btn__submit,
+    .btn__reset {
+        width: 40%;
+        border-bottom: none;
+        background-color: #101010;
+        color: #45B39D;
+    }
+    
+    .btn__reset {
+        background-color: #101010;
+    }
+    
+    .btn__submit:hover {
+        background-color: #FFF;
+    }
+    
+    .btn__reset:hover {
+        background-color: #FFF;
+    }
+    
+    .datos1 {
+        margin: 0px auto 0px 0px;
+        border: 2px solid #d3d1d1;
+        height: 30px;
+        overflow: hidden;
+        width: 230px;
+        position: relative;
+    }
+    
+    #regiones {
+        margin: 0px auto 0px auto;
+        border: 2px solid #d3d1d1;
+        height: 30px;
+        overflow: hidden;
+        width: 230px;
+        position: relative;
+    }
+    
+    #comunas {
+        margin: 0px auto 0px auto;
+        border: 2px solid #d3d1d1;
+        height: 30px;
+        overflow: hidden;
+        width: 230px;
+        position: relative;
+    }
+    
+    select {
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        width: 250px;
+    }
+    
+    select:focus {
+        outline: none;
+    }
+    
+    .datos::after {
+        content: "\025be";
+        display: table-cell;
+        padding-top: 7px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        background-color: #d9d9d9;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        pointer-events: none;
+    }
+    
+    .designF {
+        border: solid 2px #d9d9d9;
+        background-color: #EFEFEF;
+        width: 30%;
+    }
+    
+    label {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .datos1{
+       background-color: #EFEFEF;
+    }
+
+      
+
+      
+
+     
+
+    
+
+
+}
+
+
+  
+ 
+
+
+
+

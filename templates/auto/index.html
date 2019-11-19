@@ -1,0 +1,92 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="banner">
+    <img src="{% static 'img/susukialto.jpg' %}" alt="" class="banner__img">
+    <div class="contenedor">
+        <h2 class="banner__titulo">NUEVO ZUZUKI ALTO 2020</h2>
+        <p class="banner__txt">Precios desde $3.999.990</p>
+
+    </div>
+
+
+</div> 
+<main class="main">
+    <div class="contenedor">
+        <section class="info">
+            <article class="info__columna">
+                <img src="{% static 'IMG/RENAULT.jpg' %}" alt="" class="info_img">
+                <h2 class="info__titulo">RENAULT SYMBOL</h2>
+                <p class="info__txt">Renault Symbol Zen 1.6 MT Black: un sedán para todo tipo de familias Un sedán con todo lo que la familia necesita. El Renault Symbol Zen 1.6 MT Black es uno de los autos europeos más equipado del mercado. Con un diseño renovado y amplio espacio presenta atributos técnicos de avanzada en cuanto a tecnología y vanguardia.</p>
+            </article>
+            <article class="info__columna">
+                <img src="{% static 'IMG/Toyota.jpg' %}" alt="" class="info_img">
+                <h2 class="info__titulo">TOYOTA YARIS SPORT</h2>
+                <p class="info__txt">El nuevo Toyota Yaris Sedán presenta un atractivo diseño exterior e interior. Su techo catamarán te entrega mayor aerodinámica. Combinando eficiencia confort y seguridad demuestra ser mucho más que un nuevo diseño.</p>
+            </article>
+            <article class="info__columna">
+                <img src="{% static 'IMG/2020-hyundai-accent.jpg' %}" alt="" class="info_img">
+                <h2 class="info__titulo">HYUNDAI ACCENT</h2>
+                <p class="info__txt">El Accent Hatchback entrega un excepcional rendimiento ofreciéndole un desempeño y costos muy convenientes. Usted obtendrá un auto motor Gamma de alto poder que le proporcionará una nueva experiencia de manejo. Cuenta además con sistema de frenos ABS (Sistema de Frenos Antibloqueo) y Air Bags frontales.</p>
+                
+            </article>
+        </section> 
+        <section class="cursos">
+            <h2 class="section__titulo">DESTACADOS</h2>
+            <div class="cursos__columna">
+                <img src="{% static 'IMG/audi_a4.jpg' %}" alt="" class="cursos__img">
+                <div class="cursos__descripcion">
+                    <h3 class="cursos__titulo">AUDI A4</h3>
+                    <p class="cursos__txt">Vive Intensamente El Avance De La Tecnología, Este Modelo Elevará Tus Emociones Hasta Sentir La Máxima Deportividad Y Vanguardia. </p>
+                    <h1 class="valor__autos">Precios desde $21.590.000</h1> 
+                    
+
+                </div>
+
+            </div>
+        </section>
+        <section class="cursos">
+                <h2 class="section__titulo"></h2>
+                <div class="cursos__columna">
+                    <img src="{% static 'IMG/bmw_f30.jpg' %}" alt="" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos__titulo">BMW F30</h3>
+                        <p class="cursos__txt">El BMW F30 es la sexta generación de la Serie 3 perteneciente al segmento de los automóviles ejecutivos compactos. </p>
+                        <h1 class="valor__autos">Precios desde $32.590.000</h1> 
+                        
+
+                    </div>
+
+                </div>
+            </section>
+            <section class="cursos">
+                    <h2 class="section__titulo"></h2>
+                    <div class="cursos__columna">
+                        <img src="{% static 'IMG/land_rover_range.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">LAND ROVER</h3>
+                            <p class="cursos__txt"> Land rover siempre "espartano" en terminaciones o acabados en cuanto a interiores se refiere, pero práctico en resultados. </p>
+                            <h1 class="valor__autos">Precios desde $23.590.000</h1> 
+                            
+    
+                        </div>
+    
+                    </div>
+                </section>
+                <section class="cursos">
+                    <h2 class="section__titulo"></h2>
+                    <div class="cursos__columna">
+                        <img src="{% static 'IMG/Porsche_911.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">PORSCHE 911</h3>
+                            <p class="cursos__txt">La leyenda continúa, uno de los mayores pasos en el desarrollo de la larga historia de este deportivo clásico, el Porsche 911 Carrera.</p>
+                            <h1 class="valor__autos">Precios desde $55.290.000</h1>
+                            
+    
+                        </div>
+    
+                    </div>
+                
+    </div>
+  {% endblock %}    

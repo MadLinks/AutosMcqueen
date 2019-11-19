@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title %} Document {% endblock%}</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/styles.css' %}">
+</head>
+<body>
+{%block header %}
+<header class="header">
+    <div class="contenedor">
+        <h1 class="logo">MCQUEEN S.A</h1>
+        <span class="icon-menu" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+            <li class="menu__item"><a class="menu__link select" href="/auto/index">Inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="/auto/quienesSomos">Quienes Somos</a></li>
+            <li class="menu__item"><a class="menu__link" href="/auto/contacto">Contacto</a></li>
+            <li class="menu__item"><a class="menu__link" href="/auto/nuevo">Registrar Auto</a></li>
+            <li class="menu__item"><a class="menu__link" href="/auto/listar">Lista de Autos</a></li>
+            <li class="menu__item"><a class="menu__link" href="/accounts/login">Cerrar Sesion</a></li>
+            
+            
+        </nav>
+
+
+    </div>
+
+</header>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{%block footer %}
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.facebook.com" class="icon-facebook"></a>
+        <a href="https://twitter.com/?lang=es" class="icon-twitter"></a>
+        <a href="https://accounts.google.com/ServiceLogin/signinchooser?passive=1209600&continue=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&followup=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="icon-gplus"></a>
+        
+       
+    </div>    	
+    <p class="copy">&copy; MCQUEEN S.A - Todos los derechos reservados</p>
+
+</footer>
+{% endblock %}
+    <script src="{% static 'js/menu.js' %}"></script>
+    
+</body>
+</html>

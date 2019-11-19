@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block header %}
+{% endblock %}
+{% block content %}
+
+<div class="banner">
+        <img src="{% static 'img/1964-ford-shelby-cobra-427.JPG' %}" alt="" class="banner__img">
+        
+    
+</div> 
+<div><H1>REGISTRAR  USUARIO</H1></div>
+
+
+<form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+      
+                  
+    
+        <button type="submit">Guardar</button>
+    </form>
+</form>
+{% endblock %}
